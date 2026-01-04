@@ -1,0 +1,137 @@
+1. Retrieve the names of all customers from the `Customers` table, sorted in alphabetical order.
+
+select customer_name from customers
+order by customer_name asc;
+
+
+
+2. Fetch the top 10 most expensive products from the `Products` table.
+
+select * from products
+order by price desc 
+limit 10;
+
+
+
+3. Write a query to get the second-highest salary from the `Employees` table.
+
+select distict salary from emp 
+order by salary desc 
+limit 1 ;
+
+
+
+4. Get the total count of customers from each city in the `Customers` table.
+
+select city count(*) from customer
+groupy by city;
+
+
+5. Retrieve department-wise total salary from the `Employees` table but only include
+departments where the total salary is greater than 2,00,000. 
+
+select salary ,sum(salary) from emp 
+group by department
+having sum(salary)> 200000;
+
+
+6. Extract only the last four characters of the `phone_number` column and first three characters
+from `customerName` columns from the `Customers` table. 
+
+ select * from product 
+
+
+
+7. Write a query to retrieve products where the `product_name` contains "Pro".
+
+select * from product 
+where product_name like "%";
+
+
+
+8. Fetch the total number of students per course from the `Students` table, only for courses that
+have at least 30 students enrolled.
+
+ select course , count(course) from student 
+order by asc limit 30 ;
+
+
+
+9. Write an SQL query to find the number of orders placed in each month of the year.
+
+select year(order_date),
+month(order_date),
+count(*)
+from 
+
+
+10. Get the highest and lowest salary per department from the `Employees` table.
+
+select min(salary) , max(salary) from emp 
+group by department;
+
+
+11. What does the following query return?
+SELECT SUBSTRING('Database', 1, 4);
+a) Data
+b) tabase
+c) DataB
+d) Error
+
+
+Data
+
+
+
+12. Which clause is used to sort the results in descending order?
+a) ORDER BY DESC
+b) ORDER BY ASC
+c) SORT BY DESC
+d) GROUP BY DESC
+
+ 
+order by desc
+
+
+
+
+13. What is the default sorting order of `ORDER BY` if no direction (ASC/DESC) is specified?
+a) ASC
+b) DESC
+c) No specific order
+d) Error
+
+
+ASC 
+
+
+14. What will be the output of the following query?
+SELECT ROUND(15.678, 2);
+a) 15.67
+b) 15.68
+c) 15.7
+d) 16
+
+
+15.68
+
+
+
+15. Which SQL function is used to count the number of rows in a table?
+a) TOTAL()
+b) COUNT()
+c) SUM()
+d) NUMBER()
+
+
+count()
+
+
+
+16. Question:
+You have two tables:
+• Orders with columns: order_id, customer_id, order_date, total_amount.
+• Customers with columns: customer_id, customer_name.
+• O/P- customer_id, customer_name, avg_order_value
+Write an SQL query to find the average order value (total_amount) for each customer. Only
+include customers who have made more than 2 orders.
