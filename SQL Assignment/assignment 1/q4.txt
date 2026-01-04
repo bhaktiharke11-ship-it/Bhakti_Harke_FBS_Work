@@ -1,0 +1,23 @@
+Q4 .Write a SQL statement to create a table named job_histry including columns
+employee_id, start_date, end_date, job_id and department_id
+
+
+mysql> create table job_history
+    -> (empolyee_id int ,
+    -> end_date date ,
+    -> start_date date,
+    -> job_id int ,
+    -> department_id int );
+Query OK, 0 rows affected (0.10 sec)
+
+mysql> desc job_history;
++---------------+------+------+-----+---------+-------+
+| Field         | Type | Null | Key | Default | Extra |
++---------------+------+------+-----+---------+-------+
+| empolyee_id   | int  | YES  |     | NULL    |       |
+| end_date      | date | YES  |     | NULL    |       |
+| start_date    | date | YES  |     | NULL    |       |
+| job_id        | int  | YES  |     | NULL    |       |
+| department_id | int  | YES  |     | NULL    |       |
++---------------+------+------+-----+---------+-------+
+5 rows in set (0.00 sec)

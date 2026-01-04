@@ -1,0 +1,16 @@
+Q5 . Write an SQL statement to alter a table named countries to make sure that no
+duplicate data against column country_id will be allowed at the time of
+insertion.
+
+mysql> create table country
+    -> (country_id  int unique );
+Query OK, 0 rows affected (0.17 sec)
+
+mysql> desc country ;
++------------+------+------+-----+---------+-------+
+| Field      | Type | Null | Key | Default | Extra |
++------------+------+------+-----+---------+-------+
+| country_id | int  | YES  | UNI | NULL    |       |
++------------+------+------+-----+---------+-------+
+1 row in set (0.00 sec)
+ 

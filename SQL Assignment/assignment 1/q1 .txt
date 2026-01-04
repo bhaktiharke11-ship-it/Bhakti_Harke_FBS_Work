@@ -1,0 +1,19 @@
+Q1 . Login to MySQL and view all databases already present. You should get
+following result :
+
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| fbs                |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| testdb             |
+| world              |
+| zenser             |
++--------------------+
+9 rows in set (0.05 sec)

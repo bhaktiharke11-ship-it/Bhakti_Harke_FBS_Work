@@ -1,0 +1,18 @@
+Q7 
+
+mysql> create table department
+    -> (department_id int ,
+    -> department_name varchar (30) ,
+    -> manager_id int ,
+    -> location_id int ,
+    -> primary key (department_id , manager_id));
+
+mysql> desc department ;
++-----------------+-------------+------+-----+---------+-------+
+| Field           | Type        | Null | Key | Default | Extra |
++-----------------+-------------+------+-----+---------+-------+
+| department_id   | int         | NO   | PRI | NULL    |       |
+| department_name | varchar(30) | YES  |     | NULL    |       |
+| manager_id      | int         | NO   | PRI | NULL    |       |
+| location_id     | int         | YES  |     | NULL    |       |
++-----------------+-------------+------+-----+---------+-------+
